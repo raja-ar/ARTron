@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "com.arTron"
+        applicationId "com.TronAr"
         minSdkVersion 8
         targetSdkVersion 8
     }
