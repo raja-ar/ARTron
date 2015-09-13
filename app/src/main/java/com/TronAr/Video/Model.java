@@ -82,8 +82,8 @@ public class Model {
 		vec3 Vertex;
 		face currFace;
 		face faceArray[];
-		
-		Log.e("ARTRON","Start Read Mesh");
+
+		Log.e("TRONAR", "Start Read Mesh");
 		
 		InputStream inputStream = ctx.getResources().openRawResource(resId);
 		InputStreamReader inputreader = new InputStreamReader(inputStream);
@@ -160,7 +160,7 @@ public class Model {
 		}
 		catch (IOException e) 
 		{
-			Log.e("ARTRON","Mesh file access error");
+			Log.e("TRONAR", "Mesh file access error");
 		}
 		
 		faceArray = new face[mFaces.size()];
@@ -187,8 +187,8 @@ public class Model {
 				lookup[i][j] = -1;
 			}
 		}
-		
-		Log.e("ARTRON","CalVertices...");
+
+		Log.e("TRONAR", "CalVertices...");
 		for(int i=0; i<numOfFaces; i++) {
 			for(int j=0; j<3; j++) {
 				int vertex = faceArray[i].vertex[j] - 1;
@@ -199,8 +199,8 @@ public class Model {
 				}
 			}
 		}
-		
-		Log.e("ARTRON","Building Vertex Array");
+
+		Log.e("TRONAR", "Building Vertex Array");
 		
 		// Now that we have loaded all the data build the vertexarray
 		mNumOfVertices = nVertices;

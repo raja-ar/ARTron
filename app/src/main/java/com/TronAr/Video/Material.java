@@ -38,7 +38,7 @@ public class Material {
 	
 	Material(Context ctx, int resId) {
 		Debug = sb.append("Start Add Material, ").append(resId).toString();
-		Log.e("ARTRON",Debug);
+		Log.e("TRONAR", Debug);
 		AddMaterial(ctx,resId);
 	}
 	
@@ -72,27 +72,27 @@ public class Material {
 	     				default:
 	     					mData = materials.get(iMaterial);
 	     					if(temp[0].contains("Ka")) {
-	     						mData.ambient[0] = Float.valueOf(temp[1].trim()).floatValue();
-	     						mData.ambient[1] = Float.valueOf(temp[2].trim()).floatValue();
-	     						mData.ambient[2] = Float.valueOf(temp[3].trim()).floatValue();
-	     					} else if(temp[0].contains("Kd")) {
-	     						mData.diffuse[0] = Float.valueOf(temp[1].trim()).floatValue();
-	     						mData.diffuse[1] = Float.valueOf(temp[2].trim()).floatValue();
-	     						mData.diffuse[2] = Float.valueOf(temp[3].trim()).floatValue();
-	     					} else if(temp[0].contains("Ks")) {
-	     						mData.specular[0] = Float.valueOf(temp[1].trim()).floatValue();
-	     						mData.specular[1] = Float.valueOf(temp[2].trim()).floatValue();
-	     						mData.specular[2] = Float.valueOf(temp[3].trim()).floatValue();
-	     					} else if(temp[0].contains("Ns")) {
-	     						mData.shininess = Float.valueOf(temp[1].trim()).floatValue();
-	     					}
+								mData.ambient[0] = Float.valueOf(temp[1].trim());
+								mData.ambient[1] = Float.valueOf(temp[2].trim());
+								mData.ambient[2] = Float.valueOf(temp[3].trim());
+							} else if(temp[0].contains("Kd")) {
+								mData.diffuse[0] = Float.valueOf(temp[1].trim());
+								mData.diffuse[1] = Float.valueOf(temp[2].trim());
+								mData.diffuse[2] = Float.valueOf(temp[3].trim());
+							} else if(temp[0].contains("Ks")) {
+								mData.specular[0] = Float.valueOf(temp[1].trim());
+								mData.specular[1] = Float.valueOf(temp[2].trim());
+								mData.specular[2] = Float.valueOf(temp[3].trim());
+							} else if(temp[0].contains("Ns")) {
+								mData.shininess = Float.valueOf(temp[1].trim());
+							}
 							break;
 					}
 				}
 			}
 		} catch (IOException e)
 		{
-			Log.e("ARTRON","Materail Read File Exception");
+			Log.e("TRONAR", "Materail Read File Exception");
 		}
 	}
 	

@@ -301,8 +301,8 @@ public class Player {
 					
 					if(TronArGame.mPrefs.PlaySFX())
 						SoundManager.playSound(TronArGame.CRASH_SOUND, 1.0f);
-					
-					Log.e("ARTRON", "Wall CRASH");
+
+					Log.e("TRONAR", "Wall CRASH");
 					break;
 				}
 			}
@@ -352,8 +352,8 @@ public class Player {
 						
 						if(TronArGame.mPrefs.PlaySFX())
 							SoundManager.playSound(TronArGame.CRASH_SOUND, 1.0f);
-						
-						Log.e("ARTRON", "Wall CRASH");
+
+						Log.e("TRONAR", "Wall CRASH");
 						break;
 					}
 				}

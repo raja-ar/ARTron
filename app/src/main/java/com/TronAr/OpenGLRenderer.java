@@ -41,9 +41,9 @@ public class OpenGLRenderer implements GLSurfaceView.Renderer {
 	public OpenGLRenderer(Context context, int win_width, int win_height)
 	{
 		mContext = context;
-		Log.e("ARTRON", "Renderer Constructor: Create Video Object");
+		Log.e("TRONAR", "Renderer Constructor: Create Video Object");
 		Debug = sb.append("Screen size = ").append(win_width).append(",").append(win_height).toString();
-		Log.e("ARTRON", Debug);
+		Log.e("TRONAR", Debug);
 		Game.updateScreenSize(win_width, win_height);
 	}
 	
@@ -69,7 +69,7 @@ public class OpenGLRenderer implements GLSurfaceView.Renderer {
 	
 	public void onSurfaceCreated(GL10 gl, EGLConfig config) {
 
-	    Log.e("ARTRON", "Renderer: Surface Created Do perspective");
+		Log.e("TRONAR", "Renderer: Surface Created Do perspective");
 
 	    //Game.initialiseGame(mContext, gl);
 	    Game.drawSplash(mContext, gl);
@@ -78,11 +78,11 @@ public class OpenGLRenderer implements GLSurfaceView.Renderer {
 	
 	@Override
 	public void onSurfaceChanged(GL10 gl, int w, int h) {
-		Log.e("ARTRON", "Renderer: Surface changed");
+		Log.e("TRONAR", "Renderer: Surface changed");
 		sb=null;
 		sb = new StringBuffer(40);
 		Debug = sb.append("Screen size = ").append(w).append(",").append(h).toString();
-		Log.e("ARTRON", Debug);
+		Log.e("TRONAR", Debug);
 		Game.updateScreenSize(w, h);
 	}
 	

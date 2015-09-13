@@ -320,7 +320,7 @@ public class TrailMesh {
 //		sb=null;
 //		sb = new StringBuffer(40);
 //		Debug = sb.append("Offset = ").append(offset).append("/").append(vmeshSize).toString();
-//		Log.e("ARTRON", Debug);
+//		Log.e("TRONAR", Debug);
 
 		TexCoords[texOffset] = fUStart + t * fSegLength / DECAL_WIDTH;
 		TexCoords[texOffset + 1] = 0.0f;
