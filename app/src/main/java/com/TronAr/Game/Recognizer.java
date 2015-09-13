@@ -1,35 +1,27 @@
 /*
- * Copyright © 2012 Iain Churcher
+ * Copyright 2015 Azmeer Raja
  *
- * Based on GLtron by Andreas Umbach (www.gltron.org)
+ *      Licensed under the Apache License, Version 2.0 (the "License");
+ *      you may not use this file except in compliance with the License.
+ *      You may obtain a copy of the License at
  *
- * This file is part of GL TRON.
+ *          http://www.apache.org/licenses/LICENSE-2.0
  *
- * GL TRON is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * GL TRON is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with GL TRON.  If not, see <http://www.gnu.org/licenses/>.
- *
+ *      Unless required by applicable law or agreed to in writing, software
+ *      distributed under the License is distributed on an "AS IS" BASIS,
+ *      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *      See the License for the specific language governing permissions and
+ *      limitations under the License.
  */
 package com.TronAr.Game;
-
-import java.nio.FloatBuffer;
-
-import javax.microedition.khronos.opengles.GL10;
-
-import android.util.FloatMath;
 
 import com.TronAr.Video.GraphicUtils;
 import com.TronAr.Video.Model;
 import com.TronAr.Video.Vec;
+
+import java.nio.FloatBuffer;
+
+import javax.microedition.khronos.opengles.GL10;
 
 public class Recognizer {
 
@@ -154,8 +146,8 @@ public class Recognizer {
 	{
 		float dxval = velocity.v[0];
 		float dyval = velocity.v[0];
-		
-		float phi = (float)Math.acos(dxval / FloatMath.sqrt(dxval * dxval + dyval * dyval));
+
+		float phi = (float) Math.acos(dxval / Math.sqrt(dxval * dxval + dyval * dyval));
 		
 		if(dyval < 0.0f)
 			phi = (float)(2.0f * Math.PI - phi);
@@ -186,22 +178,22 @@ public class Recognizer {
 	
 	private float getx()
 	{
-		return (xv[0] * FloatMath.sin(xv[1] * mAlpha + xv[2]) - xv[3] * FloatMath.sin(xv[4] * mAlpha + xv[5]));
+		return (float) (xv[0] * Math.sin(xv[1] * mAlpha + xv[2]) - xv[3] * Math.sin(xv[4] * mAlpha + xv[5]));
 	}
 	
 	private float gety()
 	{
-		return (yv[0] * FloatMath.cos(yv[1] * mAlpha + yv[2] - yv[3] * FloatMath.sin(yv[4] * mAlpha + yv[5])));
+		return (float) (yv[0] * Math.cos(yv[1] * mAlpha + yv[2] - yv[3] * Math.sin(yv[4] * mAlpha + yv[5])));
 	}
 	
 	private float getdx()
 	{
-		return (xv[1] * xv[0] * FloatMath.cos(xv[1] * mAlpha + xv[2]) - xv[4] * xv[3] * FloatMath.cos(xv[4] * mAlpha + xv[5]));
+		return (float) (xv[1] * xv[0] * Math.cos(xv[1] * mAlpha + xv[2]) - xv[4] * xv[3] * Math.cos(xv[4] * mAlpha + xv[5]));
 	}
 	
 	private float getdy()
 	{
-		return -(yv[1] * yv[0] * FloatMath.sin(yv[1] * mAlpha + yv[2]) - yv[4] * yv[3] * FloatMath.sin(yv[4] * mAlpha + yv[5]));
+		return (float) -(yv[1] * yv[0] * Math.sin(yv[1] * mAlpha + yv[2]) - yv[4] * yv[3] * Math.sin(yv[4] * mAlpha + yv[5]));
 	}
 	
 }

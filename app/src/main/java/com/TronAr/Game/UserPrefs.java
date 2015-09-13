@@ -1,25 +1,17 @@
 /*
- * Copyright © 2012 Iain Churcher
+ * Copyright 2015 Azmeer Raja
  *
- * Based on GLtron by Andreas Umbach (www.gltron.org)
- * 
- * Preferences implementation based on work by Noah NZM TECH
+ *      Licensed under the Apache License, Version 2.0 (the "License");
+ *      you may not use this file except in compliance with the License.
+ *      You may obtain a copy of the License at
  *
- * This file is part of GL TRON.
+ *          http://www.apache.org/licenses/LICENSE-2.0
  *
- * GL TRON is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * GL TRON is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with GL TRON.  If not, see <http://www.gnu.org/licenses/>.
- *
+ *      Unless required by applicable law or agreed to in writing, software
+ *      distributed under the License is distributed on an "AS IS" BASIS,
+ *      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *      See the License for the specific language governing permissions and
+ *      limitations under the License.
  */
 
 package com.TronAr.Game;
@@ -30,18 +22,14 @@ import android.preference.PreferenceManager;
 
 public class UserPrefs {
 
+	private static final float C_GRID_SIZES[] = {360.0f, 720.0f, 1440.0f};
+	private static final float C_SPEED[] = {5.0f, 10.0f, 15.0f, 20.0f};
 	// Pref defaults
 	private final int C_PREF_FOLLOW_CAM = 1;
 	private final int C_PREF_FOLLOW_CAM_FAR = 2;
 	private final int C_PREF_FOLLOW_CAM_CLOSE = 3;
 	private final int C_PREF_BIRD_CAM = 4;
-	
 	private final String C_DEFAULT_CAM_TYPE = "1";
-	
-	private static final float C_GRID_SIZES[] = {360.0f, 720.0f, 1440.0f};
-	
-	private static final float C_SPEED[] = {5.0f, 10.0f, 15.0f, 20.0f};
-	
 	private Context mContext;
 	private Camera.CamType mCameraType;
 	

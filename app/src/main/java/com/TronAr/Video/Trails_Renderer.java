@@ -1,26 +1,25 @@
 /*
- * Copyright © 2012 Iain Churcher
+ * Copyright 2015 Azmeer Raja
  *
- * Based on GLtron by Andreas Umbach (www.gltron.org)
+ *      Licensed under the Apache License, Version 2.0 (the "License");
+ *      you may not use this file except in compliance with the License.
+ *      You may obtain a copy of the License at
  *
- * This file is part of GL TRON.
+ *          http://www.apache.org/licenses/LICENSE-2.0
  *
- * GL TRON is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * GL TRON is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with GL TRON.  If not, see <http://www.gnu.org/licenses/>.
- *
+ *      Unless required by applicable law or agreed to in writing, software
+ *      distributed under the License is distributed on an "AS IS" BASIS,
+ *      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *      See the License for the specific language governing permissions and
+ *      limitations under the License.
  */
 
 package com.TronAr.Video;
+
+import android.content.Context;
+
+import com.TronAr.Game.Camera;
+import com.TronAr.R;
 
 import java.nio.ByteBuffer;
 import java.nio.FloatBuffer;
@@ -28,28 +27,25 @@ import java.nio.ShortBuffer;
 
 import javax.microedition.khronos.opengles.GL10;
 
-import com.TronAr.R;
-import com.TronAr.Game.*;
-
-import android.content.Context;
-
 public class Trails_Renderer {
 
-	GLTexture Trails;
-	GL10 gl;
-	
+	static final float trail_top[] = {
+			1.0f, 1.0f, 1.0f, .7f,
+			1.0f, 1.0f, 1.0f, .7f,
+			1.0f, 1.0f, 1.0f, .7f};
 	private final float LX = 2.0f;
 	private final float LY = 2.0f;
-	
-	private final float shadow_matrix[] = 
+	private final float shadow_matrix[] =
 		{
 			LX * LY, 0.0f, 0.0f, 0.0f,
 			0.0f, LX * LY, 0.0f, 0.0f,
 			-LY, -LX, 0.0f, 0.0f,
 			0.0f, 0.0f, 0.0f, LX * LY
 		};
-	
+	GLTexture Trails;
+	GL10 gl;
 	FloatBuffer shadowFb;
+	FloatBuffer trailtopfb;
 	
 	public Trails_Renderer(GL10 gl_in, Context context)
 	{
@@ -61,41 +57,41 @@ public class Trails_Renderer {
 	public void Render(TrailMesh mesh)
 	{
 		int i;
-		
+
 		FloatBuffer vertexFb = GraphicUtils.ConvToFloatBuffer(mesh.Vertices);
 		FloatBuffer normalFb = GraphicUtils.ConvToFloatBuffer(mesh.Normals);
 		FloatBuffer texFb = GraphicUtils.ConvToFloatBuffer(mesh.TexCoords);
 		ShortBuffer indBb = GraphicUtils.ConvToShortBuffer(mesh.Indices);
 		ByteBuffer colorFb = GraphicUtils.ConvToByteBuffer(mesh.Colors);
-		
+
 		statesNormal();
-		
+
 		for(i = 0; i < 2; i++) // change to 2 to draw shadows
 		{
 			if( i == 0)
 				statesNormal();
 			else
 				statesShadow();
-			
+
 			gl.glTexCoordPointer(2, GL10.GL_FLOAT, 0, texFb);
 			gl.glVertexPointer(3, GL10.GL_FLOAT, 0, vertexFb);
 			gl.glNormalPointer(GL10.GL_FLOAT,	0, normalFb);
 			gl.glColorPointer(4, GL10.GL_UNSIGNED_BYTE, 0, colorFb);
-	
+
 			gl.glDrawElements(GL10.GL_TRIANGLES, mesh.iUsed, GL10.GL_UNSIGNED_SHORT, indBb);
-			
+
 			gl.glDisableClientState(GL10.GL_VERTEX_ARRAY);
 			gl.glDisableClientState(GL10.GL_NORMAL_ARRAY);
 			gl.glDisableClientState(GL10.GL_TEXTURE_COORD_ARRAY);
 			gl.glDisableClientState(GL10.GL_COLOR_ARRAY);
-			
+
 			statesRestore();
 		}
 
 		gl.glTexEnvx(GL10.GL_TEXTURE_ENV, GL10.GL_TEXTURE_ENV_MODE, GL10.GL_REPLACE);
-		
+
 	}
-	
+
 	private void statesShadow()
 	{
 //        gl.glDisable(GL10.GL_CULL_FACE);
@@ -112,13 +108,13 @@ public class Trails_Renderer {
 
 		gl.glPushMatrix();
 		gl.glMultMatrixf(shadowFb);
-		
+
 		gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);
 		gl.glEnableClientState(GL10.GL_NORMAL_ARRAY);
 		gl.glEnableClientState(GL10.GL_TEXTURE_COORD_ARRAY);
         gl.glDisableClientState(GL10.GL_COLOR_ARRAY);
-		
-        gl.glDisable(GL10.GL_CULL_FACE);
+
+		gl.glDisable(GL10.GL_CULL_FACE);
         gl.glDisable(GL10.GL_TEXTURE_2D);
         gl.glDisable(GL10.GL_LIGHTING);
 	}
@@ -136,6 +132,7 @@ public class Trails_Renderer {
 		gl.glDisable(GL10.GL_STENCIL_TEST);
 		gl.glPopMatrix();
 	}
+
 	private void statesNormal()
 	{
 		gl.glEnable(GL10.GL_POLYGON_OFFSET_FILL);
@@ -145,32 +142,26 @@ public class Trails_Renderer {
 		gl.glEnableClientState(GL10.GL_TEXTURE_COORD_ARRAY);
 		//gl.glFrontFace(GL10.GL_CCW);
 		gl.glEnableClientState(GL10.GL_COLOR_ARRAY);
-		
+
 		gl.glDisable(GL10.GL_CULL_FACE);
 		gl.glShadeModel(GL10.GL_SMOOTH);
 		gl.glEnable(GL10.GL_TEXTURE_2D);
-		
+
 		gl.glBindTexture(GL10.GL_TEXTURE_2D, Trails.getTextureID());
-		
+
 		gl.glTexEnvx(GL10.GL_TEXTURE_ENV, GL10.GL_TEXTURE_ENV_MODE, GL10.GL_DECAL);
-		
+
 		float black[] = { 0.0f, 0.0f, 0.0f, 1.0f};
 		FloatBuffer fBlack = GraphicUtils.ConvToFloatBuffer(black);
-		
+
 		gl.glMaterialfv(GL10.GL_FRONT_AND_BACK,GL10. GL_SPECULAR, fBlack);
 
 		gl.glEnable(GL10.GL_COLOR_MATERIAL);
-		
+
 		gl.glEnable(GL10.GL_BLEND);
 		gl.glBlendFunc(GL10.GL_SRC_ALPHA, GL10.GL_ONE_MINUS_SRC_ALPHA);
-		
+
 	}
-	
-	FloatBuffer trailtopfb;
-	static final float trail_top[] = {
-		1.0f, 1.0f, 1.0f, .7f,
-		1.0f, 1.0f, 1.0f, .7f,
-		1.0f, 1.0f, 1.0f, .7f};
 
 	public void drawTrailLines(Segment segs[],int trail_offset, float trail_height, Camera cam)
 	{

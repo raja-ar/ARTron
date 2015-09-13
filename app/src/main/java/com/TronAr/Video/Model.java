@@ -1,26 +1,25 @@
 /*
- * Copyright © 2012 Iain Churcher
+ * Copyright 2015 Azmeer Raja
  *
- * Based on GLtron by Andreas Umbach (www.gltron.org)
+ *      Licensed under the Apache License, Version 2.0 (the "License");
+ *      you may not use this file except in compliance with the License.
+ *      You may obtain a copy of the License at
  *
- * This file is part of GL TRON.
+ *          http://www.apache.org/licenses/LICENSE-2.0
  *
- * GL TRON is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * GL TRON is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with GL TRON.  If not, see <http://www.gnu.org/licenses/>.
- *
+ *      Unless required by applicable law or agreed to in writing, software
+ *      distributed under the License is distributed on an "AS IS" BASIS,
+ *      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *      See the License for the specific language governing permissions and
+ *      limitations under the License.
  */
 
 package com.TronAr.Video;
+
+import android.content.Context;
+import android.util.Log;
+
+import com.TronAr.Video.Material.ColourType;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -33,11 +32,6 @@ import java.nio.ShortBuffer;
 import java.util.ArrayList;
 
 import javax.microedition.khronos.opengles.GL10;
-
-import android.content.Context;
-import android.util.Log;
-
-import com.TronAr.Video.Material.ColourType;
 
 public class Model {
 
@@ -125,7 +119,7 @@ public class Model {
 							switch(buf.charAt(1)) {
 								case ' ':
 									mVertices.add(new vec3());
-									Vertex = (vec3)mVertices.get(numOfVertices);
+									Vertex = mVertices.get(numOfVertices);
 									Vertex.v[0] = Float.valueOf(temp[1].trim()).floatValue();
 									Vertex.v[1] = Float.valueOf(temp[2].trim()).floatValue();
 									Vertex.v[2] = Float.valueOf(temp[3].trim()).floatValue();
@@ -133,7 +127,7 @@ public class Model {
 									break;
 								case 'n':
 									mNormals.add(new vec3());
-									Vertex = (vec3)mNormals.get(numOfNormals);
+									Vertex = mNormals.get(numOfNormals);
 									Vertex.v[0] = Float.valueOf(temp[1].trim()).floatValue();
 									Vertex.v[1] = Float.valueOf(temp[2].trim()).floatValue();
 									Vertex.v[2] = Float.valueOf(temp[3].trim()).floatValue();
@@ -148,7 +142,7 @@ public class Model {
 							// Load face data
 							numOfFaces++;
 							mFaces.add(new face());
-							currFace = (face)mFaces.get(numOfFaces);
+							currFace = mFaces.get(numOfFaces);
 							temp2 = temp[1].split("//"); 
 							currFace.vertex[0] = Integer.parseInt(temp2[0].trim());
 							currFace.normal[0] = Integer.parseInt(temp2[1].trim());
@@ -170,7 +164,7 @@ public class Model {
 		}
 		
 		faceArray = new face[mFaces.size()];
-		faceArray = (face[])mFaces.toArray(faceArray);
+		faceArray = mFaces.toArray(faceArray);
 		int nVertices = 0;
 		
 		// Create an array of the size of the total number of materials
@@ -221,10 +215,10 @@ public class Model {
 		
 		float tempVertex[] = new float[mNumOfVertices * 3];
 		float tempnormals[] = new float[mNumOfVertices * 3];
-		vec3 VertexArr[] = new vec3[mVertices.size()]; 
-		VertexArr = (vec3[])mVertices.toArray(VertexArr);
-		vec3 NormalArr[] = new vec3[mNormals.size()]; 
-		NormalArr = (vec3[])mNormals.toArray(NormalArr);
+		vec3 VertexArr[] = new vec3[mVertices.size()];
+		VertexArr = mVertices.toArray(VertexArr);
+		vec3 NormalArr[] = new vec3[mNormals.size()];
+		NormalArr = mNormals.toArray(NormalArr);
 		
 		for(int i=0;i<numOfVertices;i++) {
 			for(int j=0;j<numOfNormals; j++) {
@@ -262,7 +256,7 @@ public class Model {
 		
 		for(int i=0;i<numOfFaces;i++) {
 			int materialtemp = faceArray[i].material;
-			tempIndices = (short[])Indices.get(materialtemp);
+			tempIndices = Indices.get(materialtemp);
 			for(int j=0;j<3;j++) {
 				int vertex = faceArray[i].vertex[j] - 1;
 				int normal = faceArray[i].normal[j] - 1;
@@ -272,7 +266,7 @@ public class Model {
 		}
 		
 		for(int i=0;i<numOfMaterials;i++) {
-			tempIndices = (short[])Indices.get(i);
+			tempIndices = Indices.get(i);
 			mIndicesBuffer[i].put(tempIndices);
 			mIndicesBuffer[i].position(0);
 		}

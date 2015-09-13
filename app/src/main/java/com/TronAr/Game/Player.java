@@ -1,35 +1,37 @@
 /*
- * Copyright © 2012 Iain Churcher
+ * Copyright 2015 Azmeer Raja
  *
- * Based on GLtron by Andreas Umbach (www.gltron.org)
+ *      Licensed under the Apache License, Version 2.0 (the "License");
+ *      you may not use this file except in compliance with the License.
+ *      You may obtain a copy of the License at
  *
- * This file is part of GL TRON.
+ *          http://www.apache.org/licenses/LICENSE-2.0
  *
- * GL TRON is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * GL TRON is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with GL TRON.  If not, see <http://www.gnu.org/licenses/>.
- *
+ *      Unless required by applicable law or agreed to in writing, software
+ *      distributed under the License is distributed on an "AS IS" BASIS,
+ *      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *      See the License for the specific language governing permissions and
+ *      limitations under the License.
  */
 
 package com.TronAr.Game;
 
-import java.util.Random;
-
-import javax.microedition.khronos.opengles.GL10;
-
 import android.util.Log;
 
 import com.TronAr.Sound.SoundManager;
-import com.TronAr.Video.*;
+import com.TronAr.Video.Explosion;
+import com.TronAr.Video.GLTexture;
+import com.TronAr.Video.HUD;
+import com.TronAr.Video.Lighting;
+import com.TronAr.Video.Model;
+import com.TronAr.Video.Segment;
+import com.TronAr.Video.TrailMesh;
+import com.TronAr.Video.Trails_Renderer;
+import com.TronAr.Video.Vec;
+
+import java.util.Random;
+
+import javax.microedition.khronos.opengles.GL10;
 
 public class Player {
 
@@ -430,15 +432,8 @@ public class Player {
 			
 			s = v1.Dot(v2);
 			d = (float)Math.cos((fov/2) * 2 * Math.PI / 360.0f);
-			
-			if(s < d - (Cycle.GetBBoxRadius() * 2.0f))
-			{
-				retValue = false;
-			}
-			else
-			{
-				retValue = true;
-			}
+
+			retValue = s >= d - (Cycle.GetBBoxRadius() * 2.0f);
 			
 		}
 		

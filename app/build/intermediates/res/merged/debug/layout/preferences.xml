@@ -1,87 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2015 Azmeer Raja
+  ~
+  ~      Licensed under the Apache License, Version 2.0 (the "License");
+  ~      you may not use this file except in compliance with the License.
+  ~      You may obtain a copy of the License at
+  ~
+  ~          http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~      Unless required by applicable law or agreed to in writing, software
+  ~      distributed under the License is distributed on an "AS IS" BASIS,
+  ~      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~      See the License for the specific language governing permissions and
+  ~      limitations under the License.
+  -->
+
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
     <PreferenceCategory
-        android:title="Player Options"
-        android:key="first_category">
+        android:key="first_category"
+        android:title="Player Options">
     
-		<ListPreference    android:title="Bike Colour"
-		                   android:summary="Select which colour bike you would like to play as (changes won't take effect until a new game is started)"
-		                   android:key="playerBike"
-		                   android:defaultValue="0"
+		<ListPreference    android:defaultValue="0"
 		                   android:entries="@array/bikeArray"
-		                   android:entryValues="@array/playerValues" />       
+		                   android:entryValues="@array/playerValues"
+		                   android:key="playerBike"
+		                   android:summary="Select which colour bike you would like to play as (changes won't take effect until a new game is started)"
+		                   android:title="Bike Colour" />
 	    
 	</PreferenceCategory>
 
 	<PreferenceCategory
-		android:title="Music Options"
-		android:key="second_category">
+		android:key="second_category"
+		android:title="Music Options">
 		
-		<CheckBoxPreference android:title="Music"
-							android:summary="Toggle Music on/off"
-		                    android:defaultValue="true"
-		                    android:key="musicOption" />
+		<CheckBoxPreference android:defaultValue="true"
+							android:key="musicOption"
+		                    android:summary="Toggle Music on/off"
+		                    android:title="Music" />
 	    	    
-		<CheckBoxPreference android:title="Sound Effects"
-							android:summary="Toggle Sound Effects on/off"
-		                    android:defaultValue="true"
-		                    android:key="sfxOption" />
+		<CheckBoxPreference android:defaultValue="true"
+							android:key="sfxOption"
+		                    android:summary="Toggle Sound Effects on/off"
+		                    android:title="Sound Effects" />
 		
 			    
 	</PreferenceCategory>
     
     
     <PreferenceCategory
-        android:title="Graphic Options"
-        android:key="third_category">
+        android:key="third_category"
+        android:title="Graphic Options">
     
     	
-		<CheckBoxPreference android:title="FPS Counter"
-							android:summary="Toggle FPS counter on/off"
-		                    android:defaultValue="false"
-		                    android:key="fpsOption" />
+		<CheckBoxPreference android:defaultValue="false"
+							android:key="fpsOption"
+		                    android:summary="Toggle FPS counter on/off"
+		                    android:title="FPS Counter" />
 
-		<ListPreference    android:title="Camera"
-		                   android:summary="Change camera view"
-		                   android:key="cameraPref"
-		                   android:defaultValue="0"
+		<ListPreference    android:defaultValue="0"
 		                   android:entries="@array/cameraEntries"
-		                   android:entryValues="@array/cameraValues" />                     
+		                   android:entryValues="@array/cameraValues"
+		                   android:key="cameraPref"
+		                   android:summary="Change camera view"
+		                   android:title="Camera" />
 	</PreferenceCategory>
 
 	<PreferenceCategory
-		android:title="Game Options"
-		android:key="fourth_category">
+		android:key="fourth_category"
+		android:title="Game Options">
 
-   		<ListPreference    android:title="Number of Players"
-                   android:summary="Selects the number of players (changes won't take effect until a new game is started)"
-                   android:key="playerNumber"
-                   android:defaultValue="4"
+   		<ListPreference    android:defaultValue="4"
                    android:entries="@array/playerNumEntries"
-                   android:entryValues="@array/playerNumValues" />
+                   android:entryValues="@array/playerNumValues"
+                   android:key="playerNumber"
+                   android:summary="Selects the number of players (changes won't take effect until a new game is started)"
+                   android:title="Number of Players" />
 	    
     		
-		<ListPreference    android:title="Arena Size"
-		                   android:summary="Select the size of the arena (changes won't take effect until a new game is started)"
-		                   android:key="arenaSize"
-		                   android:defaultValue="1"
+		<ListPreference    android:defaultValue="1"
 		                   android:entries="@array/arenaEntries"
-		                   android:entryValues="@array/arenaValues" />
+		                   android:entryValues="@array/arenaValues"
+		                   android:key="arenaSize"
+		                   android:summary="Select the size of the arena (changes won't take effect until a new game is started)"
+		                   android:title="Arena Size" />
 		
-		<ListPreference  android:title="Game Speed"
-		                 android:summary="Select the speed of the game (changes won't take effect until a new game is started)"
-		                 android:key="gameSpeed"
-		                 android:defaultValue="1"
+		<ListPreference  android:defaultValue="1"
 		                 android:entries="@array/gameSpeedEntries"
-		                 android:entryValues="@array/gameSpeedValues" />
+		                 android:entryValues="@array/gameSpeedValues"
+		                 android:key="gameSpeed"
+		                 android:summary="Select the speed of the game (changes won't take effect until a new game is started)"
+		                 android:title="Game Speed" />
 		
-		<CheckBoxPreference  android:title="Draw Recognizer"
+		<CheckBoxPreference  android:defaultValue="true"
+		                     android:key="drawRecog"
 		                     android:summary="Display the Recognizer in game (can slow framerate if enabled)"
-		                     android:defaultValue="true"
-		                     android:key="drawRecog" />
+		                     android:title="Draw Recognizer" />
 		
 	</PreferenceCategory>    
 </PreferenceScreen><!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/TronAr/app/src/main/res/layout/preferences.xml -->
