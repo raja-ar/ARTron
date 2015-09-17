@@ -18,4 +18,5 @@
 
     <string name="app_name">RaceAr</string>
     <string name="preferences_title">Preferences</string>
+  <string name="race_ad">ca-app-pub-1256822806357264/7030788430</string>
 </resources>
