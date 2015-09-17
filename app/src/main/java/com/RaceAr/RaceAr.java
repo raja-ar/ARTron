@@ -25,6 +25,7 @@ import android.view.Display;
 import android.view.KeyEvent;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import com.RaceAr.widget.NetworkUtil;
 import com.google.android.gms.ads.AdListener;
@@ -49,7 +50,10 @@ public class RaceAr extends Activity {
 	   
 	    super.onCreate(savedInstanceState);
 		if (NetworkUtil.getConnectivityStatus(RaceAr.this) == 0) {
+			Toast.makeText(RaceAr.this,"Network check returns false",Toast.LENGTH_SHORT).show();
+
 		} else {
+			Toast.makeText(RaceAr.this,"Network check returns true",Toast.LENGTH_SHORT).show();
 			launchAd();
 			loadAd();
 		}

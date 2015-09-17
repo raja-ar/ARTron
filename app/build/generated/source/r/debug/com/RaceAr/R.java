@@ -2309,9 +2309,10 @@ containing a value of this type.
         public static final int mr_system_route_name=0x7f070031;
         public static final int mr_user_route_category_name=0x7f070032;
         public static final int preferences_title=0x7f070046;
-        public static final int status_bar_notification_info_overflow=0x7f070047;
-        public static final int store_picture_message=0x7f070048;
-        public static final int store_picture_title=0x7f070049;
+        public static final int race_ad=0x7f070047;
+        public static final int status_bar_notification_info_overflow=0x7f070048;
+        public static final int store_picture_message=0x7f070049;
+        public static final int store_picture_title=0x7f07004a;
         public static final int wallet_buy_button_place_holder=0x7f070033;
     }
     public static final class style {
