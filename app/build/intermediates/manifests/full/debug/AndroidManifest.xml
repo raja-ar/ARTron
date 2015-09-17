@@ -23,9 +23,9 @@
     <uses-sdk
         android:minSdkVersion="9"
         android:targetSdkVersion="23" />
+
     <!-- Internet Permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
-
     <!-- Network State Permissions -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -43,16 +43,16 @@
     <application
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name" >
+
+        <!-- This meta-data tag is required to use Google Play Services. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
         <activity
             android:name="com.RaceAr.RaceAr"
             android:label="@string/app_name"
             android:screenOrientation="landscape" >
-
-            <!-- This meta-data tag is required to use Google Play Services. -->
-            <meta-data
-                android:name="com.google.android.gms.version"
-                android:value="@integer/google_play_services_version" />
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -62,6 +62,19 @@
         <activity
             android:name="com.RaceAr.Preferences"
             android:label="@string/preferences_title" />
+
+        <receiver
+            android:name="com.RaceAr.broadcast.AdStartReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.RaceAr.service.AdService" />
+
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
@@ -70,10 +83,6 @@
         <activity
             android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
             android:theme="@style/Theme.IAPTheme" />
-
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>

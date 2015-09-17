@@ -20,17 +20,10 @@ package com.RaceAr;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Display;
 import android.view.KeyEvent;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Toast;
-
-import com.RaceAr.widget.NetworkUtil;
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.InterstitialAd;
 
 
 public class RaceAr extends Activity {
@@ -39,7 +32,6 @@ public class RaceAr extends Activity {
 	
 	private Boolean _FocusChangeFalseSeen = false;
 	private Boolean _Resume = false;
-	private InterstitialAd mInterstitialAd;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         
@@ -49,14 +41,7 @@ public class RaceAr extends Activity {
 	    int height = d.getHeight();
 	   
 	    super.onCreate(savedInstanceState);
-		if (NetworkUtil.getConnectivityStatus(RaceAr.this) == 0) {
-			Toast.makeText(RaceAr.this,"Network check returns false",Toast.LENGTH_SHORT).show();
 
-		} else {
-			Toast.makeText(RaceAr.this,"Network check returns true",Toast.LENGTH_SHORT).show();
-			launchAd();
-			loadAd();
-		}
 
 
 
@@ -112,63 +97,6 @@ public class RaceAr extends Activity {
         }
         return super.onKeyUp(keyCode, event);
     }
-	private void loadAd() {
-		AdRequest adRequest = new AdRequest.Builder()
-				.build();
 
-		mInterstitialAd.loadAd(adRequest);
-	}
 
-	private void showAd() {
-		if (mInterstitialAd.isLoaded()) {
-			mInterstitialAd.show();
-		} else {
-			Log.d("Ad", "Not Loaded");
-		}
-	}
-
-	private void launchAd() {
-		// Create the InterstitialAd and set the adUnitId.
-		mInterstitialAd = new InterstitialAd(this);
-		// Defined in res/values/strings.xml
-		mInterstitialAd.setAdUnitId(getString(R.string.race_ad));
-
-		mInterstitialAd.setAdListener(new AdListener() {
-			@Override
-			public void onAdLoaded() {
-				super.onAdLoaded();
-				showAd();
-			}
-
-			@Override
-			public void onAdFailedToLoad(int errorCode) {
-				super.onAdFailedToLoad(errorCode);
-				String msg = String.format("onFaildtoLoad (%s)", getErrorReson(errorCode));
-			}
-
-			@Override
-			public void onAdClosed() {
-				super.onAdClosed();
-			}
-		});
-
-	}
-	private String getErrorReson(int errcode) {
-		String errReason = "";
-		switch (errcode) {
-			case AdRequest.ERROR_CODE_INTERNAL_ERROR:
-				errReason = "Internal Error";
-				break;
-			case AdRequest.ERROR_CODE_INVALID_REQUEST:
-				errReason = "invalid request";
-				break;
-			case AdRequest.ERROR_CODE_NETWORK_ERROR:
-				errReason = "Network err";
-				break;
-			case AdRequest.ERROR_CODE_NO_FILL:
-				errReason = "No Fill";
-				break;
-		}
-		return errReason;
-	}
 }
