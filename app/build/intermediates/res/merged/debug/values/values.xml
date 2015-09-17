@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/TronAr/app/src/main/res/values/array.xml -->
+    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/RaceAr/app/src/main/res/values/array.xml -->
     <eat-comment/>
     <string-array name="arenaEntries">
     <item>Small</item>
@@ -66,7 +66,7 @@
     <item>4</item>
     <item>5</item>
 </string-array>
-    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/TronAr/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/RaceAr/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="app_name">TronAr</string>
     <string name="preferences_title">Preferences</string>

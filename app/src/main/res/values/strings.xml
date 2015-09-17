@@ -16,6 +16,6 @@
 
 <resources>
 
-    <string name="app_name">TronAr</string>
+    <string name="app_name">RaceAr</string>
     <string name="preferences_title">Preferences</string>
 </resources>

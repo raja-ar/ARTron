@@ -13,25 +13,16 @@
  *      See the License for the specific language governing permissions and
  *      limitations under the License.
  */
+package com.RaceAr;
 
-apply plugin: 'com.android.application'
+import android.os.Bundle;
+import android.preference.PreferenceActivity;
 
-android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.1"
-
-    defaultConfig {
-        applicationId "com.RaceAr"
-        minSdkVersion 8
-        targetSdkVersion 23
-        versionCode 101
-        versionName '1.0.1'
-    }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
-        }
-    }
+public class Preferences extends PreferenceActivity {
+	 @Override
+	    protected void onCreate(Bundle savedInstanceState) {
+	        // TODO Auto-generated method stub
+	        super.onCreate(savedInstanceState);
+	        addPreferencesFromResource(R.layout.preferences);
+	    }
 }

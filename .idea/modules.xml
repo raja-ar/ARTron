@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TronAr.iml" filepath="$PROJECT_DIR$/TronAr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RaceAr.iml" filepath="$PROJECT_DIR$/RaceAr.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
