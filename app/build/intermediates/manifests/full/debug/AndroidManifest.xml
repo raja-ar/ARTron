@@ -17,8 +17,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.RaceAr"
     android:installLocation="auto"
-    android:versionCode="102"
-    android:versionName="1.0.2" >
+    android:versionCode="103"
+    android:versionName="1.0.3" >
 
     <uses-sdk
         android:minSdkVersion="9"
@@ -51,6 +51,11 @@
         <activity
             android:name="com.RaceAr.Preferences"
             android:label="@string/preferences_title" />
+        <activity
+            android:name="com.RaceAr.DevActivity"
+            android:label="DevActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Toolbar1" />
 
         <receiver
             android:name="com.RaceAr.broadcast.AdStartReceiver"
@@ -72,6 +77,9 @@
         <activity
             android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
             android:theme="@style/Theme.IAPTheme" />
+        <activity
+            android:name="android.support.v7.widget.TestActivity"
+            android:label="RecyclerViewTestActivity" />
     </application>
 
 </manifest>

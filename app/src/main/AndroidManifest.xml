@@ -41,7 +41,10 @@
 
 		<activity android:name=".Preferences"
             android:label="@string/preferences_title"/>
-
+<activity android:name="com.RaceAr.DevActivity"
+    android:label="DevActivity"
+    android:screenOrientation="portrait"
+    android:theme="@style/Toolbar1"/>
         <receiver
             android:name=".broadcast.AdStartReceiver"
             android:enabled="true"

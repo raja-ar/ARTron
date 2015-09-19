@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:17:1-58:12
+ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:17:1-61:12
 	package
 		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:18:7-27
 		INJECTED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml
@@ -28,16 +28,23 @@ MERGED from [com.google.android.gms:play-services-analytics:7.8.0] C:\Users\Raaj
 	android:name
 		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:24:22-76
 application
-ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:26:5-57:17
+ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:26:5-60:17
 MERGED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.8.0\AndroidManifest.xml:24:5-32:19
 MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.0] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-analytics:7.8.0] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.8.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.0] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-appindexing:7.8.0] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.8.0\AndroidManifest.xml:19:5-20
 MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.0] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:recyclerview-v7:21.0.3] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\AndroidManifest.xml:17:5-19:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.melnykov:floatingactionbutton:1.3.0] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.melnykov\floatingactionbutton\1.3.0\AndroidManifest.xml:12:5-20
+MERGED from [com.android.support:recyclerview-v7:21.0.3] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\AndroidManifest.xml:17:5-19:19
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:27:9-41
 	android:icon
@@ -75,39 +82,57 @@ ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManif
 		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:43:13-54
 	android:name
 		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:42:13-40
+activity#com.RaceAr.DevActivity
+ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:44:1-47:38
+	android:screenOrientation
+		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:46:5-41
+	android:label
+		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:45:5-32
+	android:theme
+		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:47:5-36
+	android:name
+		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:44:11-48
 receiver#com.RaceAr.broadcast.AdStartReceiver
-ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:45:9-53:20
+ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:48:9-56:20
 	android:enabled
-		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:47:13-35
+		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:50:13-35
 	android:exported
-		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:48:13-37
+		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:51:13-37
 	android:name
-		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:46:13-54
+		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:49:13-54
 intent-filter#android.net.conn.CONNECTIVITY_CHANGE+android.net.wifi.WIFI_STATE_CHANGED
-ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:49:13-52:29
+ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:52:13-55:29
 action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:50:17-79
+ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:53:17-79
 	android:name
-		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:50:25-76
+		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:53:25-76
 action#android.net.wifi.WIFI_STATE_CHANGED
-ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:51:17-78
+ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:54:17-78
 	android:name
-		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:51:25-75
+		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:54:25-75
 service#com.RaceAr.service.AdService
-ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:55:9-54
+ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:58:9-54
 	android:name
-		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:55:18-51
+		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:58:18-51
 uses-sdk
 INJECTED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.8.0\AndroidManifest.xml:23:5-42
 MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.0] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:20:5-43
 MERGED from [com.google.android.gms:play-services-analytics:7.8.0] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.8.0\AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.0] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:20:5-43
 MERGED from [com.google.android.gms:play-services-appindexing:7.8.0] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.8.0\AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services-base:7.8.0] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.0] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.0.1] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:20:5-43
+MERGED from [com.github.ksoichiro:android-observablescrollview:1.5.2] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.github.ksoichiro\android-observablescrollview\1.5.2\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:recyclerview-v7:21.0.3] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:20:5-43
+MERGED from [com.melnykov:floatingactionbutton:1.3.0] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.melnykov\floatingactionbutton\1.3.0\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:recyclerview-v7:21.0.3] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:support-v4:23.0.1] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		INJECTED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml
@@ -128,3 +153,10 @@ ADDED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\Raaja\Andro
 		ADDED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.8.0\AndroidManifest.xml:31:13-50
 	android:name
 		ADDED from [com.google.android.gms:play-services-ads:7.8.0] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.8.0\AndroidManifest.xml:30:19-91
+activity#android.support.v7.widget.TestActivity
+ADDED from [com.android.support:recyclerview-v7:21.0.3] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\AndroidManifest.xml:18:9-115
+MERGED from [com.android.support:recyclerview-v7:21.0.3] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\AndroidManifest.xml:18:9-115
+	android:label
+		ADDED from [com.android.support:recyclerview-v7:21.0.3] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\AndroidManifest.xml:18:19-59
+	android:name
+		ADDED from [com.android.support:recyclerview-v7:21.0.3] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\AndroidManifest.xml:18:60-113

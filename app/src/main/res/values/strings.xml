@@ -18,5 +18,7 @@
 
     <string name="app_name">RaceAr</string>
     <string name="preferences_title">Preferences</string>
+  <string name="btn_dev">Developer</string>
+  <string name="title_activity_about_developer">About Developer</string>
   <string name="race_ad">ca-app-pub-1256822806357264/7030788430</string>
 </resources>

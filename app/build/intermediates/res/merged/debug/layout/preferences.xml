@@ -107,5 +107,8 @@
 		                     android:summary="Display the Recognizer in game (can slow framerate if enabled)"
 			android:title="Draw Recognizer" />
 		
-	</PreferenceCategory>    
+	</PreferenceCategory>
+	<Preference android:title="Developer"
+		android:key="@string/btn_dev"
+		android:summary="About Developer"/>
 </PreferenceScreen><!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/RaceAr/app/src/main/res/layout/preferences.xml -->

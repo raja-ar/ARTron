@@ -15,7 +15,9 @@
  */
 package com.RaceAr;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.util.Log;
 
@@ -32,12 +34,27 @@ public class Preferences extends PreferenceActivity {
 	        // TODO Auto-generated method stub
 	        super.onCreate(savedInstanceState);
 	        addPreferencesFromResource(R.layout.preferences);
+
+		Preference button = (Preference)findPreference(getString(R.string.btn_dev));
+		button.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+			@Override
+			public boolean onPreferenceClick(Preference preference) {
+				//code for what you want it to do
+				Intent intent = new Intent(Preferences.this,DevActivity.class);
+				startActivity(intent);
+				return true;
+			}
+		});
+
 		 if (NetworkUtil.getConnectivityStatus(Preferences.this) == 0) {
 
 		 } else {
 			 launchAd();
 			 loadAd();
-		 }}
+		 }
+
+
+	}
 
 	private void loadAd() {
 		AdRequest adRequest = new AdRequest.Builder()
