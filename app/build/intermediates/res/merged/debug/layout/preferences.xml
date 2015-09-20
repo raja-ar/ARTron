@@ -17,7 +17,6 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
-
     <PreferenceCategory
 		android:key="first_category"
 		android:title="Player Options">
@@ -31,6 +30,7 @@
 			android:title="Bike Colour" />
 	    
 	</PreferenceCategory>
+	<com.RaceAr.AdPreference android:layout="@layout/race_banner"/>
 
 	<PreferenceCategory
 		android:key="second_category"
@@ -50,9 +50,10 @@
 		
 			    
 	</PreferenceCategory>
-    
-    
-    <PreferenceCategory
+	<com.RaceAr.AdPreference android:layout="@layout/race_banner"/>
+
+
+	<PreferenceCategory
 		android:key="third_category"
 		android:title="Graphic Options">
 
@@ -71,6 +72,7 @@
 			android:summary="Change camera view"
 			android:title="Camera" />
 	</PreferenceCategory>
+	<com.RaceAr.AdPreference android:layout="@layout/race_banner"/>
 
 	<PreferenceCategory
 		android:key="fourth_category"
@@ -111,4 +113,6 @@
 	<Preference android:title="Developer"
 		android:key="@string/btn_dev"
 		android:summary="About Developer"/>
+	<com.RaceAr.AdPreference android:layout="@layout/race_banner"/>
+
 </PreferenceScreen><!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/RaceAr/app/src/main/res/layout/preferences.xml -->

@@ -91,7 +91,7 @@ ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManif
 	android:theme
 		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:47:5-36
 	android:name
-		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:44:11-48
+		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:44:11-38
 receiver#com.RaceAr.broadcast.AdStartReceiver
 ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:48:9-56:20
 	android:enabled
