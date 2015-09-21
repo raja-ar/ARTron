@@ -24,8 +24,8 @@ android {
         applicationId "com.RaceAr"
         minSdkVersion 9
         targetSdkVersion 23
-        versionCode 104
-        versionName '1.0.4'
+        versionCode 107
+        versionName '1.0.7'
     }
 
     buildTypes {

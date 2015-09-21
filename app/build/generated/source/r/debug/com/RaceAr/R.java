@@ -1805,6 +1805,7 @@ containing a value of this type.
         public static final int action_mode_close_button=0x7f0e0026;
         public static final int activity_chooser_view_content=0x7f0e0027;
         public static final int ad=0x7f0e0067;
+        public static final int adView=0x7f0e0068;
         public static final int adjust_height=0x7f0e001c;
         public static final int adjust_width=0x7f0e001d;
         public static final int alertTitle=0x7f0e0031;

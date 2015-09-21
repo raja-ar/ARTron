@@ -50,7 +50,6 @@
 		
 			    
 	</PreferenceCategory>
-	<com.RaceAr.AdPreference android:layout="@layout/race_banner"/>
 
 
 	<PreferenceCategory
@@ -113,6 +112,5 @@
 	<Preference android:key="@string/btn_dev"
 		android:summary="About Developer"
 		android:title="Developer"/>
-	<com.RaceAr.AdPreference android:layout="@layout/race_banner"/>
 
 </PreferenceScreen>

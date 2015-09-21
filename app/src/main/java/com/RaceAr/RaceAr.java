@@ -183,7 +183,17 @@ public class RaceAr extends Activity {
 		}
 		return errReason;
 	}
+@Override
+	public void onBackPressed() {
+	super.onBackPressed();
+	if (NetworkUtil.getConnectivityStatus(RaceAr.this) == 0) {
 
+	} else {
+		launchAd();
+		loadAd();
+		finish();
+	}
+	}
 
 
 

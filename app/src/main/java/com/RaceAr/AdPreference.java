@@ -48,12 +48,15 @@ public class AdPreference extends Preference {
         // Create the adView
         //AdView adView = new AdView(AdPreference.this, AdSize.BANNER, "ca-app-pub-1256822806357264/2311054037");
             AdView adView=new AdView(activity);
-                    adView.setAdSize(AdSize.SMART_BANNER);
+                    adView.setAdSize(AdSize.BANNER);
                     adView.setAdUnitId(activity.getString(R.string.race_banner));
            ((RelativeLayout) view).addView(adView);
 
+
+
         // Initiate a generic request to load it with an ad
         AdRequest adRequest = new AdRequest.Builder().build();
+
         adView.loadAd(adRequest);
 
         return view;
