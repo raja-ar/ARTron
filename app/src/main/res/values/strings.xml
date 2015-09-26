@@ -16,7 +16,7 @@
 
 <resources>
 
-    <string name="app_name">RaceAr</string>
+    <string name="app_name">Race Ar</string>
     <string name="preferences_title">Preferences</string>
   <string name="btn_dev">Developer</string>
   <string name="title_activity_about_developer">About Developer</string>
