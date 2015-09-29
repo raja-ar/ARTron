@@ -83,13 +83,13 @@ ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManif
 	android:name
 		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:42:13-40
 activity#com.RaceAr.DevActivity
-ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:44:1-47:38
+ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:44:1-47:42
 	android:screenOrientation
 		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:46:5-41
 	android:label
 		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:45:5-32
 	android:theme
-		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:47:5-36
+		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:47:5-40
 	android:name
 		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:44:11-38
 receiver#com.RaceAr.broadcast.AdStartReceiver

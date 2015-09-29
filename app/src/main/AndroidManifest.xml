@@ -44,7 +44,7 @@
 <activity android:name=".DevActivity"
     android:label="DevActivity"
     android:screenOrientation="portrait"
-    android:theme="@style/Toolbar1"/>
+    android:theme="@style/AppBaseTheme"/>
         <receiver
             android:name=".broadcast.AdStartReceiver"
             android:enabled="true"

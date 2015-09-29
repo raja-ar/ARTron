@@ -17,8 +17,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.RaceAr"
     android:installLocation="auto"
-    android:versionCode="111"
-    android:versionName="1.1.1" >
+    android:versionCode="200"
+    android:versionName="2.0.0" >
 
     <uses-sdk
         android:minSdkVersion="9"
@@ -55,7 +55,7 @@
             android:name="com.RaceAr.DevActivity"
             android:label="DevActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Toolbar1" />
+            android:theme="@style/AppBaseTheme" />
 
         <receiver
             android:name="com.RaceAr.broadcast.AdStartReceiver"
