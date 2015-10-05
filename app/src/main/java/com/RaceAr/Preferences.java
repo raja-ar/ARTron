@@ -19,14 +19,23 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
+import android.util.Log;
+
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
 
 public class Preferences extends PreferenceActivity {
+	private InterstitialAd mInterstitialAd;
+
 
 	@Override
 	    protected void onCreate(Bundle savedInstanceState) {
 	        // TODO Auto-generated method stub
 	        super.onCreate(savedInstanceState);
 	        addPreferencesFromResource(R.layout.preferences);
+		loadAd();
+		launchAd();
 
 		Preference button = (Preference)findPreference(getString(R.string.btn_dev));
 		button.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
@@ -40,6 +49,73 @@ public class Preferences extends PreferenceActivity {
 		});
 
 
+
+	}
+
+	private void loadAd() {
+		AdRequest adRequest = new AdRequest.Builder()
+				.build();
+
+		mInterstitialAd.loadAd(adRequest);
+	}
+
+	private void showAd() {
+		if (mInterstitialAd.isLoaded()) {
+			mInterstitialAd.show();
+		} else {
+			Log.d("Ad", "Not Loaded");
+		}
+	}
+
+	private void launchAd() {
+		mInterstitialAd = new InterstitialAd(this);
+		mInterstitialAd.setAdUnitId(getString(R.string.race_ad));
+
+		mInterstitialAd.setAdListener(new AdListener() {
+			@Override
+			public void onAdLoaded() {
+				super.onAdLoaded();
+				showAd();
+			}
+
+			@Override
+			public void onAdFailedToLoad(int errorCode) {
+				super.onAdFailedToLoad(errorCode);
+				String msg = String.format("onFaildtoLoad (%s)", getErrorReson(errorCode));
+			}
+
+			@Override
+			public void onAdClosed() {
+				super.onAdClosed();
+			}
+		});
+
+	}
+	private String getErrorReson(int errcode) {
+		String errReason = "";
+		switch (errcode) {
+			case AdRequest.ERROR_CODE_INTERNAL_ERROR:
+				errReason = "Internal Error";
+				break;
+			case AdRequest.ERROR_CODE_INVALID_REQUEST:
+				errReason = "invalid request";
+				break;
+			case AdRequest.ERROR_CODE_NETWORK_ERROR:
+				errReason = "Network err";
+				break;
+			case AdRequest.ERROR_CODE_NO_FILL:
+				errReason = "No Fill";
+				break;
+		}
+		return errReason;
+	}
+
+	@Override
+	public void onBackPressed() {
+		super.onBackPressed();
+
+
+		finish();
 
 	}
 

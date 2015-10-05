@@ -77,7 +77,7 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
             Bitmap bm_race=BitmapFactory.decodeResource(getResources(),R.drawable.racear,options);
             racear.setImageBitmap(bm_race);
             Bitmap bm_fotoar=BitmapFactory.decodeResource(getResources(),R.drawable.fotoar,options);
-            racear.setImageBitmap(bm_fotoar);
+            fotoar.setImageBitmap(bm_fotoar);
         }
 
         //Normal Size
@@ -97,7 +97,7 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
             Bitmap bm_race=BitmapFactory.decodeResource(getResources(),R.drawable.racear,options);
             racear.setImageBitmap(bm_race);
             Bitmap bm_fotoar=BitmapFactory.decodeResource(getResources(),R.drawable.fotoar,options);
-            racear.setImageBitmap(bm_fotoar);
+            fotoar.setImageBitmap(bm_fotoar);
         }
 
         // Large Size
@@ -118,7 +118,7 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
             Bitmap bm_race=BitmapFactory.decodeResource(getResources(),R.drawable.racear,options);
             racear.setImageBitmap(bm_race);
             Bitmap bm_fotoar=BitmapFactory.decodeResource(getResources(),R.drawable.fotoar,options);
-            racear.setImageBitmap(bm_fotoar);
+            fotoar.setImageBitmap(bm_fotoar);
 
         }
 
@@ -155,7 +155,7 @@ public class DevActivity extends AppCompatActivity implements ObservableScrollVi
             Bitmap bm_race=BitmapFactory.decodeResource(getResources(),R.drawable.racear,options);
             racear.setImageBitmap(bm_race);
             Bitmap bm_fotoar=BitmapFactory.decodeResource(getResources(),R.drawable.fotoar,options);
-            racear.setImageBitmap(bm_fotoar);
+            fotoar.setImageBitmap(bm_fotoar);
 
         }
 

@@ -267,7 +267,7 @@
     <color name="color_accent_dark">@color/darkPink</color>
     <color name="color_primary">@color/Crimson</color>
     <color name="color_primary_dark">@color/darkPink</color>
-    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/RaceAr/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.8.0/res/values/common_colors.xml -->
+    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/RaceAr/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values/common_colors.xml -->
     <eat-comment/>
     <color name="common_action_bar_splitter">#d2d2d2</color>
     <color name="common_signin_btn_dark_text_default">@android:color/white</color>
@@ -509,9 +509,9 @@
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="abc_max_action_buttons">2</integer>
     <integer name="cancel_button_image_alpha">127</integer>
-    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/RaceAr/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.8.0/res/values/version.xml -->
+    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/RaceAr/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values/version.xml -->
     <eat-comment/>
-    <integer name="google_play_services_version">7895000</integer>
+    <integer name="google_play_services_version">8115000</integer>
     <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/RaceAr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <integer name="status_bar_notification_info_maxnum">999</integer>
@@ -532,20 +532,20 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/RaceAr/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.8.0/res/values/admob_strings.xml -->
+    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/RaceAr/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/res/values/admob_strings.xml -->
     <eat-comment/>
     <string name="accept">Accept</string>
     <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/RaceAr/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="app_name">Race Ar</string>
-    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/RaceAr/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.8.0/res/values/auth_strings.xml -->
+    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/RaceAr/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values/auth_strings.xml -->
     <eat-comment/>
     <string name="auth_google_play_services_client_facebook_display_name">Facebook</string>
     <string name="auth_google_play_services_client_google_display_name">Google</string>
     <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/RaceAr/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="btn_dev">Developer</string>
-    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/RaceAr/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.8.0/res/values/common_strings.xml -->
+    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/RaceAr/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values/common_strings.xml -->
     <eat-comment/>
     <string name="common_android_wear_notification_needs_update_text"><ns1:g id="app_name">%1$s</ns1:g> requires an update to the Android Wear app.</string>
     <string name="common_android_wear_update_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run unless you update the Android Wear app.</string>
@@ -577,9 +577,7 @@
     <string name="common_google_play_services_updating_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t run without Google Play services, which are currently updating.</string>
     <string name="common_google_play_services_updating_title">Google Play services are updating</string>
     <string name="common_open_on_phone">Open on phone</string>
-    <string name="common_signin_button_text">Sign in</string>
-    <string name="common_signin_button_text_long">Sign in with Google</string>
-    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/RaceAr/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.8.0/res/values/admob_strings.xml -->
+    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/RaceAr/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/res/values/admob_strings.xml -->
     <eat-comment/>
     <string name="create_calendar_message">Allow Ad to create a calendar event?</string>
     <string name="create_calendar_title">Create calendar event</string>
@@ -604,7 +602,7 @@
     <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/RaceAr/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>
-    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/RaceAr/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.8.0/res/values/admob_strings.xml -->
+    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/RaceAr/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/res/values/admob_strings.xml -->
     <eat-comment/>
     <string name="store_picture_message">"Allow Ad to store image in Picture gallery?"</string>
     <string name="store_picture_title">Save image</string>
@@ -1781,7 +1779,7 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/RaceAr/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.8.0/res/values/admob_iap_style.xml -->
+    <!-- From: file:/C:/Users/Raaja/AndroidStudioProjects/RaceAr/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/res/values/admob_iap_style.xml -->
     <eat-comment/>
     <style name="Theme.IAPTheme" parent="android:Theme">
     <item name="android:windowIsTranslucent">true</item>
