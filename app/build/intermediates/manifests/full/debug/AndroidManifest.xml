@@ -17,8 +17,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.RaceAr"
     android:installLocation="auto"
-    android:versionCode="299"
-    android:versionName="2.9.9" >
+    android:versionCode="210"
+    android:versionName="2.1.0" >
 
     <uses-sdk
         android:minSdkVersion="9"
@@ -57,17 +57,17 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppBaseTheme" />
         <!--
-        <receiver
-            android:name=".broadcast.AdStartReceiver"
-            android:enabled="true"
-            android:exported="false" >
-            <intent-filter>
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
-            </intent-filter>
-        </receiver>
+          <receiver
+              android:name=".broadcast.AdStartReceiver"
+              android:enabled="true"
+              android:exported="false" >
+              <intent-filter>
+                  <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                  <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+              </intent-filter>
+          </receiver>
 
-        <service android:name=".service.AdService" />
+          <service android:name=".service.AdService" />
         -->
 
 
