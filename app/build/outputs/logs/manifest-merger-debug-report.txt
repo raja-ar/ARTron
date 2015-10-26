@@ -86,28 +86,6 @@ ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManif
 		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:47:5-40
 	android:name
 		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:44:11-38
-receiver#com.RaceAr.broadcast.AdStartReceiver
-ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:48:9-56:20
-	android:enabled
-		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:50:13-35
-	android:exported
-		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:51:13-37
-	android:name
-		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:49:13-54
-intent-filter#android.net.conn.CONNECTIVITY_CHANGE+android.net.wifi.WIFI_STATE_CHANGED
-ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:52:13-55:29
-action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:53:17-79
-	android:name
-		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:53:25-76
-action#android.net.wifi.WIFI_STATE_CHANGED
-ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:54:17-78
-	android:name
-		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:54:25-75
-service#com.RaceAr.service.AdService
-ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:58:9-54
-	android:name
-		ADDED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml:58:18-51
 uses-sdk
 INJECTED from C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.google.android.gms:play-services-ads:8.1.0] C:\Users\Raaja\AndroidStudioProjects\RaceAr\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.1.0\AndroidManifest.xml:23:5-42
